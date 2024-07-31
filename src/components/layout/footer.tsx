@@ -14,7 +14,7 @@ export const Footer = () => {
       <Wrapper className='space-y-3.5'>
         <Logo />
 
-        <div className='flex items-center justify-between border-t border-neutral-50 py-8'>
+        <div className='flex flex-col items-start justify-between gap-4 border-t border-neutral-50 py-8 xl:flex-row xl:items-center'>
           <p className='text-2xl font-semibold text-neutral-600'>
             Create Explore & Collect Digital NFTs
           </p>

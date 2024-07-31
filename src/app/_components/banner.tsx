@@ -5,7 +5,7 @@ import { Wrapper } from '@/components/wrapper'
 export const Banner = () => {
   return (
     <Wrapper className='flex flex-col items-center space-y-10 rounded-32 bg-banner bg-cover bg-center py-18'>
-      <h2 className='text-6xl font-medium text-white'>
+      <h2 className='text-28 font-medium text-white md:text-46 xl:text-6xl'>
         Build your NFT profile
       </h2>
 

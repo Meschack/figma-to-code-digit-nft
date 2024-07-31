@@ -16,6 +16,8 @@ const config: Config = {
       },
       fontSize: {
         base: ['16px', '24px'],
+        28: ['28px', '40px'],
+        46: ['46px', '40px'],
         '6xl': ['64px', '40px']
       },
       colors: {
