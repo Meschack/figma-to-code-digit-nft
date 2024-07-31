@@ -12,12 +12,12 @@ const links = [
 
 export const Header = () => {
   return (
-    <header className='py-4 border-b border-neutral-50'>
+    <header className='border-b border-neutral-50 py-4'>
       <Wrapper className='flex items-center justify-between py-4'>
         <Logo />
 
         <nav>
-          <ul className='flex items-center gap-7 font-semibold text-base text-neutral-700'>
+          <ul className='flex items-center gap-7 text-base font-semibold text-neutral-700'>
             {links.map((link) => (
               <li key={link.path}>
                 <Link href={link.path}>{link.label}</Link>
@@ -31,7 +31,7 @@ export const Header = () => {
             Sign up
           </button>
 
-          <button className='rounded-42 bg-neutral-800 py-2.5 px-6.5 text-base text-white font-semibold'>
+          <button className='rounded-42 bg-neutral-800 px-6.5 py-2.5 text-base font-semibold text-white'>
             Connect Wallet
           </button>
         </div>

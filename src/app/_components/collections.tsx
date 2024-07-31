@@ -64,7 +64,7 @@ export const Collections = () => {
               role='tab'
               value={category.id}
               className={cn(
-                'px-6.5 py-3.5 bg-neutral-50 text-neutral-800 font-semibold text-sm border-none rounded-xl',
+                'rounded-xl border-none bg-neutral-50 px-6.5 py-3.5 text-sm font-semibold text-neutral-800',
                 selectedCategory === category.id && 'bg-neutral-800 text-white'
               )}
             >
@@ -73,12 +73,12 @@ export const Collections = () => {
           ))}
         </div>
 
-        <button className='underline text-neutral-500 border-none p-0 font-semibold text-sm'>
+        <button className='border-none p-0 text-sm font-semibold text-neutral-500 underline'>
           Voir plus
         </button>
       </div>
 
-      <div className='grid md:grid-cols-2 xl:grid-cols-4 gap-6 py-3.5 px-11 xl:px-0'>
+      <div className='grid gap-6 px-11 py-3.5 md:grid-cols-2 xl:grid-cols-4 xl:px-0'>
         {collections
           .filter((el) =>
             selectedCategory !== 'all' ? el.category === selectedCategory : el
@@ -97,7 +97,7 @@ interface CollectionProps {
 
 const CollectionCard = ({ collection }: CollectionProps) => {
   return (
-    <div className='border space-y-5 p-3 border-neutral-100 rounded-20'>
+    <div className='space-y-5 rounded-20 border border-neutral-100 p-3'>
       <Image
         src={collection.picture}
         alt={`Picture of collection "${collection.title}"`}
@@ -106,17 +106,17 @@ const CollectionCard = ({ collection }: CollectionProps) => {
       />
 
       <div className='flex items-center justify-between font-bold text-neutral-800'>
-        <h3 className='font-bold text-base text-neutral-800'>
+        <h3 className='text-base font-bold text-neutral-800'>
           {collection.title}
         </h3>
 
-        <div className='flex gap-0.5 items-center'>
+        <div className='flex items-center gap-0.5'>
           <Image src={ethereumEllipse} alt='Ethereum Ellipse' />
           <span className='text-lg'>{collection.diamonds}</span>
         </div>
       </div>
 
-      <button className='rounded-10 bg-transparent border w-full text-center py-3.5 px-6.5 border-neutral-800 font-semibold text-base'>
+      <button className='w-full rounded-10 border border-neutral-800 bg-transparent px-6.5 py-3.5 text-center text-base font-semibold'>
         Place a Bid
       </button>
     </div>

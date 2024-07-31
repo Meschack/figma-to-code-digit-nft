@@ -14,13 +14,13 @@ export const Footer = () => {
       <Wrapper className='space-y-3.5'>
         <Logo />
 
-        <div className='flex items-center justify-between py-8 border-t border-neutral-50'>
-          <p className='font-semibold text-2xl text-neutral-600'>
+        <div className='flex items-center justify-between border-t border-neutral-50 py-8'>
+          <p className='text-2xl font-semibold text-neutral-600'>
             Create Explore & Collect Digital NFTs
           </p>
 
           <nav>
-            <ul className='flex items-center gap-7 font-semibold text-sm text-black capitalize'>
+            <ul className='flex items-center gap-7 text-sm font-semibold capitalize text-black'>
               {links.map((link) => (
                 <li key={link.path}>
                   <Link href={link.path}>{link.label}</Link>

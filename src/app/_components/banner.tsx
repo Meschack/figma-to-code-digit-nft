@@ -4,8 +4,8 @@ import { Wrapper } from '@/components/wrapper'
 
 export const Banner = () => {
   return (
-    <Wrapper className='space-y-10 bg-banner bg-cover bg-center rounded-32 py-18 flex flex-col items-center'>
-      <h2 className='font-medium text-6xl text-white'>
+    <Wrapper className='flex flex-col items-center space-y-10 rounded-32 bg-banner bg-cover bg-center py-18'>
+      <h2 className='text-6xl font-medium text-white'>
         Build your NFT profile
       </h2>
 
@@ -13,7 +13,7 @@ export const Banner = () => {
         Join almost 10k NFT profiles on Digit !
       </p>
 
-      <button className='bg-white text-neutral-800 text-base font-semibold rounded-42 py-3.5 px-6.5'>
+      <button className='rounded-42 bg-white px-6.5 py-3.5 text-base font-semibold text-neutral-800'>
         Sign up now
       </button>
     </Wrapper>

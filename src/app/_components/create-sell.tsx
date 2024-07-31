@@ -41,12 +41,12 @@ const steps: Step[] = [
 
 const StepCard = ({ step }: { step: Step }) => {
   return (
-    <div className='bg-neutral-50 rounded-3xl space-y-2.5 p-6'>
-      <div className='rounded-lg p-3.5 bg-neutral-600 w-fit'>
+    <div className='space-y-2.5 rounded-3xl bg-neutral-50 p-6'>
+      <div className='w-fit rounded-lg bg-neutral-600 p-3.5'>
         <Image src={step.icon} alt='Icon' width={30} height={30} />
       </div>
 
-      <h3 className='text-neutral-800 text-xl font-bold'>{step.title}</h3>
+      <h3 className='text-xl font-bold text-neutral-800'>{step.title}</h3>
 
       <p className='text-neutral-400'>{step.description}</p>
     </div>
@@ -60,7 +60,7 @@ export const CreateAndSell = () => {
         Create and Sell Now
       </h2>
 
-      <div className='grid md:grid-cols-2 xl:grid-cols-4 gap-6 px-11 xl:px-0'>
+      <div className='grid gap-6 px-11 md:grid-cols-2 xl:grid-cols-4 xl:px-0'>
         {steps.map((step) => (
           <StepCard step={step} key={step.title} />
         ))}
