@@ -33,15 +33,14 @@ const config: Config = {
         }
       },
       borderRadius: {
+        10: '10px',
+        20: '20px',
         32: '32px',
         42: '42px'
       },
       spacing: {
         6.5: '26px',
         18: '72px'
-      },
-      screens: {
-        xl: '1200px'
       }
     }
   },

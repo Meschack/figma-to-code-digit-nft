@@ -60,7 +60,7 @@ export const CreateAndSell = () => {
         Create and Sell Now
       </h2>
 
-      <div className='grid md:grid-cols-2 xl:grid-cols-4 gap-6'>
+      <div className='grid md:grid-cols-2 xl:grid-cols-4 gap-6 px-11 xl:px-0'>
         {steps.map((step) => (
           <StepCard step={step} key={step.title} />
         ))}

@@ -1,8 +1,10 @@
 import { Wrapper } from '@/components/wrapper'
 
+// TODO: Revoir la luminosité du background
+
 export const Banner = () => {
   return (
-    <Wrapper className='space-y-10 bg-banner rounded-32 py-18 flex flex-col items-center'>
+    <Wrapper className='space-y-10 bg-banner bg-cover bg-center rounded-32 py-18 flex flex-col items-center'>
       <h2 className='font-medium text-6xl text-white'>
         Build your NFT profile
       </h2>

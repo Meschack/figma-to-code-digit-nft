@@ -10,6 +10,12 @@ export const metadata: Metadata = {
   description: 'See the NFT new world'
 }
 
+/* const raleway = Raleway({
+  weight: ['400', '500', '600', '700'],
+  variable: '--font-raleway',
+  subsets: ['latin']
+}) */
+
 export default function RootLayout({
   children
 }: Readonly<{
@@ -17,7 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={cn(raleway.className, 'font-raleway space-y-24')}>
+      <body className={cn(raleway.className, 'space-y-24')}>
         <Header />
         {children}
         <Footer />
