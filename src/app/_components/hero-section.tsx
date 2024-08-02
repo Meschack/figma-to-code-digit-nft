@@ -41,7 +41,7 @@ export const HeroSection = () => {
           <Image
             src={robotHead}
             alt='A robot head'
-            className='mt-auto aspect-[287.58/442.29] w-[287.58px] rounded-184 object-cover'
+            className='mt-auto aspect-hero-image w-hero-image rounded-184 object-cover'
           />
         </div>
 
@@ -49,7 +49,7 @@ export const HeroSection = () => {
           <Image
             src={sugarMonkey}
             alt='Sweet monkey'
-            className='mb-[150px] aspect-[287.58/442.29] w-[287.58px] rounded-184 object-cover'
+            className='mb-[150px] aspect-hero-image w-hero-image rounded-184 object-cover'
           />
         </div>
       </div>

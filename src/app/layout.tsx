@@ -5,9 +5,13 @@ import { raleway } from '@/config/fonts'
 import { Footer } from '@/components/layout/footer'
 import { Header } from '@/components/layout/header'
 
+const baseUrl = process.env.APP_URL
+
 export const metadata: Metadata = {
   title: 'Digit NFT',
-  description: 'See the NFT new world'
+  description: 'See the NFT new world',
+  keywords: ['nft', 'nft landing'],
+  metadataBase: baseUrl ? new URL(baseUrl) : null
 }
 
 export default function RootLayout({
@@ -16,7 +20,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang='en' className='no-scrollbar max-w-vw overflow-x-hidden'>
+    <html lang='en' className='max-w-vw overflow-x-hidden'>
       <body
         className={cn(raleway.className, 'space-y-24 hover:[&_a]:underline')}
       >
