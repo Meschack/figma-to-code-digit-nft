@@ -1,8 +1,8 @@
 import { Collection } from '@/types/collections'
-import cyberPunk from '@@/images/cyber-punk.png'
-import durolostBoll from '@@/images/durolost-boll.png'
-import spaceX from '@@/images/space-x.png'
-import snoopDog from '@@/images/snoop-dog.png'
+import cyberPunk from '@@/images/cyber-punk.webp'
+import durolostBoll from '@@/images/durolost-boll.webp'
+import spaceX from '@@/images/space-x.webp'
+import snoopDog from '@@/images/snoop-dog.webp'
 
 export const categories = [
   { label: 'All categories', id: 'all' },

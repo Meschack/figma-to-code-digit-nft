@@ -1,6 +1,6 @@
 import { Wrapper } from '@/components/ui/wrapper'
-import robotHead from '@@/images/robot-head.png'
-import sugarMonkey from '@@/images/sugar-monkey.png'
+import robotHead from '@@/images/robot-head.webp'
+import sugarMonkey from '@@/images/sugar-monkey.webp'
 import linkedStars from '@@/icons/linked-stars.svg'
 import arrowRight from '@@/icons/arrow-right.svg'
 import Image from 'next/image'
@@ -15,7 +15,7 @@ export const HeroSection = () => {
         </h1>
 
         <div className='space-y-6.5'>
-          <p className='w-2/3 text-base font-semibold text-neutral-400'>
+          <p className='text-pretty text-base font-semibold text-neutral-400 md:w-3/4'>
             Vorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
             turpis molestie, di
           </p>
@@ -30,14 +30,14 @@ export const HeroSection = () => {
         </div>
       </div>
 
-      <div className='relative mt-5 flex gap-4 *:basis-1/2'>
+      <div className='relative mx-auto mt-5 flex gap-4 overflow-hidden *:md:basis-1/2'>
         <Image
           src={linkedStars}
           className='absolute right-1/2 top-4 translate-x-1/2 md:translate-x-0'
           alt='Linked stars'
         />
 
-        <div className='relative flex'>
+        <div className='relative flex shrink-0 md:shrink'>
           <Image
             src={robotHead}
             alt='A robot head'
@@ -45,7 +45,7 @@ export const HeroSection = () => {
           />
         </div>
 
-        <div className='relative'>
+        <div className='relative shrink-0 md:shrink'>
           <Image
             src={sugarMonkey}
             alt='Sweet monkey'

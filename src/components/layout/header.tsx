@@ -7,7 +7,7 @@ import { NavbarActions } from '../ui/navbar-actions'
 export const Header = () => {
   return (
     <header className='border-b border-neutral-50 py-4'>
-      <Wrapper className='flex items-center justify-between border-l py-4'>
+      <Wrapper className='flex items-center justify-between py-4'>
         <Logo />
 
         <nav className='hidden xl:block'>

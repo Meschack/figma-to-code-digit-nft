@@ -8,7 +8,7 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: { banner: "url('/images/banner-background.png')" },
+      backgroundImage: { banner: "url('/images/banner-background.webp')" },
       fontFamily: { raleway: ['var(--font-raleway)'] },
       fontSize: {
         base: ['16px', '24px'],

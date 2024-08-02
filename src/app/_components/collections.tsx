@@ -6,6 +6,7 @@ import { cn } from '@/lib/utils'
 import { CategoriesIds } from '@/types/collections'
 import { categories, collections } from '@/data/collections'
 import { CollectionCard } from '@/components/ui/collection-card'
+import { AnimatePresence } from 'framer-motion'
 
 export const Collections = () => {
   const [selectedCategory, setSelectedCategory] = useState<CategoriesIds>('all')
@@ -30,7 +31,7 @@ export const Collections = () => {
               role='tab'
               value={category.id}
               className={cn(
-                'whitespace-nowrap rounded-xl border-none bg-neutral-50 px-6.5 py-3.5 text-sm font-semibold text-neutral-800',
+                'whitespace-nowrap rounded-xl border-none bg-neutral-50 px-6.5 py-2.5 text-sm font-semibold text-neutral-800',
                 selectedCategory === category.id && 'bg-neutral-800 text-white'
               )}
             >
@@ -44,15 +45,17 @@ export const Collections = () => {
         </button>
       </div>
 
-      <div className='grid gap-6 px-6.5 py-3.5 md:grid-cols-2 md:px-11 xl:grid-cols-4 xl:px-0'>
-        {collections
-          .filter((el) =>
-            selectedCategory !== 'all' ? el.category === selectedCategory : el
-          )
-          .map((collection) => (
-            <CollectionCard collection={collection} key={collection.title} />
-          ))}
-      </div>
+      <AnimatePresence mode='popLayout'>
+        <div className='grid gap-6 px-6.5 py-3.5 md:grid-cols-2 md:px-11 xl:grid-cols-4 xl:px-0'>
+          {collections
+            .filter((el) =>
+              selectedCategory !== 'all' ? el.category === selectedCategory : el
+            )
+            .map((collection) => (
+              <CollectionCard collection={collection} key={collection.title} />
+            ))}
+        </div>
+      </AnimatePresence>
     </Wrapper>
   )
 }

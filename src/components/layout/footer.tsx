@@ -19,7 +19,7 @@ export const Footer = () => {
             Create Explore & Collect Digital NFTs
           </p>
 
-          <nav>
+          <nav className='mx-auto md:ml-0 xl:mr-0'>
             <ul className='flex items-center gap-7 text-sm font-semibold capitalize text-black'>
               {links.map((link) => (
                 <li key={link.path}>
