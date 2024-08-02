@@ -47,7 +47,11 @@ const config: Config = {
         18: '72px',
         13: '52px'
       },
-      maxWidth: { vw: '100vw' },
+      maxWidth: {
+        vw: '100vw',
+        desktop: '1200px',
+        tablet: '676px'
+      },
       width: { 'hero-image': '287.58px' },
       aspectRatio: { 'hero-image': '287.58/442.29' },
       scale: { 102: '1.02' }

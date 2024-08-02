@@ -45,11 +45,11 @@ export const HeroSection = () => {
           />
         </div>
 
-        <div className='relative shrink-0 md:shrink'>
+        <div className='relative shrink-0 pb-[150px] md:shrink'>
           <Image
             src={sugarMonkey}
             alt='Sweet monkey'
-            className='mb-[150px] aspect-hero-image w-hero-image rounded-184 object-cover'
+            className='aspect-hero-image w-hero-image rounded-184 object-cover'
           />
         </div>
       </div>
