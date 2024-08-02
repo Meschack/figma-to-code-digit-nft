@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { Logo } from '../ui/logo'
-import { Wrapper } from '../wrapper'
+import { Wrapper } from '../ui/wrapper'
 
 const links = [
   { label: 'Privacy', path: '/privacy' },

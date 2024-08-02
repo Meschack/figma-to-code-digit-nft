@@ -22,14 +22,29 @@
   .collection__pic {
     min-width: var(--collection-picture-width);
     width: 100%;
-    height: var(--collection-picture-height);
+    /* height: var(--collection-picture-height); */
     border-radius: 20px;
     object-fit: cover;
+    aspect-ratio: 258 / 213;
   }
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+@layer utilities {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none !important;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none !important; /* IE and Edge */
+    scrollbar-width: none !important; /* Firefox */
+    overflow-y: auto !important;
   }
 }

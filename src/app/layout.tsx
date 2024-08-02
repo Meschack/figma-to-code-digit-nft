@@ -10,20 +10,16 @@ export const metadata: Metadata = {
   description: 'See the NFT new world'
 }
 
-/* const raleway = Raleway({
-  weight: ['400', '500', '600', '700'],
-  variable: '--font-raleway',
-  subsets: ['latin']
-}) */
-
 export default function RootLayout({
   children
 }: Readonly<{
   children: React.ReactNode
 }>) {
   return (
-    <html lang='en'>
-      <body className={cn(raleway.className, 'space-y-24')}>
+    <html lang='en' className='no-scrollbar max-w-vw overflow-x-hidden'>
+      <body
+        className={cn(raleway.className, 'space-y-24 hover:[&_a]:underline')}
+      >
         <Header />
         {children}
         <Footer />

@@ -8,14 +8,13 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        banner: "url('/banner-background.png')"
-      },
-      fontFamily: {
-        raleway: ['var(--font-raleway)']
-      },
+      backgroundImage: { banner: "url('/images/banner-background.png')" },
+      fontFamily: { raleway: ['var(--font-raleway)'] },
       fontSize: {
         base: ['16px', '24px'],
+        'base-title': ['52px', '82px'],
+        'middle-title': ['96px', '82px'],
+        'big-title': ['120px', '108px'],
         28: ['28px', '40px'],
         46: ['46px', '40px'],
         '6xl': ['64px', '40px']
@@ -32,18 +31,23 @@ const config: Config = {
           700: '#12171F',
           800: '#0E1218',
           900: '#0B0D12'
-        }
+        },
+        navbar: '#F8F8F8'
       },
       borderRadius: {
         10: '10px',
         20: '20px',
         32: '32px',
-        42: '42px'
+        42: '42px',
+        184: '184px'
       },
       spacing: {
+        4.5: '18px',
         6.5: '26px',
-        18: '72px'
-      }
+        18: '72px',
+        13: '52px'
+      },
+      maxWidth: { vw: '100vw' }
     }
   },
   plugins: []
