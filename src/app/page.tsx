@@ -1,7 +1,7 @@
-import { Banner } from './_components/banner'
-import { Collections } from './_components/collections'
-import { CreateAndSell } from './_components/create-sell'
-import { HeroSection } from './_components/hero-section'
+import { Banner } from '@/components/ui/banner'
+import { Collections } from '@/components/ui/collections'
+import { CreateAndSell } from '@/components/ui/create-sell'
+import { HeroSection } from '@/components/ui/hero-section'
 
 export default function Home() {
   return (
